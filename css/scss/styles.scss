@@ -1,7 +1,4 @@
 @import url(../../resources/fonts/fonts.css);
-@import 'bootstrap/bootstrap';
-@import 'bootstrap/variables';
-@import 'bootstrap/mixins';
 
 *
 {
@@ -191,7 +188,7 @@ body
 
 .sky-wrapper
 {
-	background: linear-gradient(top, #f5f5f5 0%, #91a1ff 100%);
+	background: linear-gradient(to bottom, #f5f5f5 0%, #91a1ff 100%);
 	width: 100%;
 	height: 500px;
 	box-shadow: inset 0 -50px 10px #ffffff10;
@@ -249,14 +246,16 @@ body
 
 @keyframes sunrise
 {
-	0% {
+	0%
+	{
 		box-shadow: none;
 	}
 }
 
 @keyframes rays
 {
-	0% {
+	0%
+	{
 		box-shadow: 
 		0 0 0 0 #FFDE0080,
 		0 0 0 20px #FFDE0080,
@@ -265,7 +264,8 @@ body
 		0 0 0 80px #FFDE0010,
 		0 0 40px 100px #FFDE0010;
 	}
-	100% {
+	100%
+	{
 		box-shadow: 
 		0 0 0 20px #FFDE0080,
 		0 0 0 40px #FFDE0040,
@@ -273,6 +273,39 @@ body
 		0 0 0 80px #FFDE0010,
 		0 0 0 100px #FFDE0000,
 		0 0 40px 100px #FFDE0010;
+	}
+}
+
+
+@keyframes sunmoveX
+{
+	0%
+	{
+		margin-right: 70px;
+	}
+	50%
+	{
+		margin-right: 132px;
+	}
+	100%
+	{
+		margin-right: 70px;
+	}
+}
+
+@keyframes sunmoveY
+{
+	0%
+	{
+		margin-top: 100px;
+	}
+	50%
+	{
+		margin-top: 132px;
+	}
+	100%
+	{
+		margin-top: 100px;
 	}
 }
 
@@ -294,7 +327,9 @@ body
 		0 0 40px 100px #FFDE0010;
 	animation:
 		sunrise 2s infinite linear forwards,
-		rays 2s 2s infinite linear;
+		rays 2s 2s infinite linear,
+		sunmoveX 10s infinite linear,
+		sunmoveY 5s infinite linear;
 }
 
 @keyframes cloudsAnimate
@@ -342,7 +377,7 @@ body
 .cloud
 {
 	background: whitesmoke;
-	background: linear-gradient(top, white 5%, #f1f1f1 100%);
+	background: linear-gradient(to bottom, #ffffff 5%, #f1f1f1 100%);
 	border-radius: 100px;
 	box-shadow: 0 8px 5px rgba(0, 0, 0, 0.1);
 	height: 120px;
@@ -810,7 +845,7 @@ header
 			height: 40px;
 			width: 40px;
 			display: block;
-			background: rgba($black, .05);
+			background: rgba(#000, .05);
 			border-radius: 50%;
 			position: relative;
 			span {
@@ -821,7 +856,7 @@ header
 				transform: translate(-50%, -50%);
 			}
 			&:hover {
-				color: $white;
+				color: #fff;
 			}
 		}
 	}
@@ -829,8 +864,8 @@ header
 
 .form-control {
 	height: 52px;
-	background: $white;
-	color: $black;
+	background: #fff;
+	color: #000;
 	font-size: 18px;
 	border-radius: 0px;
 	box-shadow: none;
@@ -856,7 +891,8 @@ textarea.form-control {
 		width: 360%;
 		background: rgba(#12cc94,1);
 	}
-	@include media-breakpoint-down(sm){
+	@media (max-width: 767.98px)
+	{
 		background: transparent;
 		&:after{
 			background: transparent;
@@ -892,9 +928,9 @@ footer
 		margin-bottom: 30px;
 		&.footer-heading-white
 		{
-			@include media-breakpoint-up(md)
+			@media (max-width: 991.98px)
 			{
-				color: $white;
+				color: #fff;
 			}
 		}
 	}
@@ -914,7 +950,7 @@ footer
 		.form-control
 		{
 			height: 50px;
-			background: $white;
+			background: #fff;
 			color: rgba(0,0,0,.3);
 			font-size: 14px;
 			border-radius: 5px;
@@ -950,7 +986,7 @@ footer
 		.submit
 		{
 			background: #2f89fc !important;
-			color: $white;
+			color: #fff;
 		}
 		textarea.form-control
 		{
@@ -964,7 +1000,7 @@ footer
 		{
 			background: #12cc94;
 		}
-		@include media-breakpoint-down(sm)
+		@media (max-width: 767.98px)
 		{
 			background: transparent;
 			&:after
