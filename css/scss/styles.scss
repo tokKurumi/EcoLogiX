@@ -791,6 +791,7 @@ header
 
 .offer-block__tip
 {
+	padding: 20px;
 	margin: 10px auto;
 }
 
@@ -814,14 +815,14 @@ header
 .offer-tip__header
 {
 	width: 100%;
-	font-size: 22px;
+	font-size: 24px;
 	font-weight: bold;
 	color: black;
 }
 .offer-tip__desc
 {
 	margin: auto 0;
-	font-size: 14px;
+	font-size: 18px;
 	font-weight: lighter;
 	color:gray
 }
@@ -1010,4 +1011,399 @@ footer
 			}
 		}
 	}
+}
+
+.about,
+.other-energy-sources
+{
+	width: 100%;
+	height: 600px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.about
+{
+	background: url(../../resources/img/projects-bg.jpg) center no-repeat;
+}
+
+.other-energy-sources
+{
+	background: url(../../resources/img/Depositphotos_91194800_original-1-1920x685-1.jpg) center no-repeat;
+}
+
+.about__wrap,
+.other-energy-sources__wrap
+{
+	text-align: center;
+	color: #fff;
+}
+
+.about__title,
+.other-energy-sources__title
+{
+	font-size: 60px;
+	font-weight: bold;
+}
+
+.about__desc
+{
+	font-size: 24px;
+}
+
+.learn-more__wrap
+{
+	height: 100%;
+}
+
+.learn-more__title
+{
+	text-align: center;
+	margin-bottom: 80px;
+}
+
+.learn-more__title__text
+{
+	font-size: 40px;
+	font-weight: bold;
+}
+
+.learn-more__tip
+{
+	margin: 20px;
+}
+
+.learn-tip__circle
+{
+	width: 96px;
+	height: 96px;
+	border-radius: 50%;
+	background-color: #19D567;
+	margin-right: 10px;
+}
+
+.learn-tip__content
+{
+	width: calc(100% - 96px - 10px);
+}
+
+.learn-tip__text
+{
+	margin-top: 20px;
+	font-size: 18px;
+	font-weight: normal;
+	color: #88888888;
+}
+
+.learn-tip__header
+{
+	font-size: 24px;
+	font-weight: bold;
+	color: #000;
+}
+
+.awards
+{
+	background-color: #19d567;
+}
+
+.awards__item
+{
+	text-align: center;
+}
+
+.awards__text
+{
+	font-size: 40px;
+	font-weight: bold;
+	color: #fff;
+	letter-spacing: 10px;
+	span
+	{
+		font-size: 18px;
+		font-weight: normal;
+		letter-spacing: 3px;
+	}
+}
+
+.team
+{
+	margin-top: 50px;
+}
+
+.team__header
+{
+	font-size: 40px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.team__persons-wrap
+{
+	margin-top: 20px;
+}
+
+.team__person
+{
+	width: 100%;
+	text-align: center;
+	margin: 15px;
+	background-color: #fff;
+	transition-duration: 400ms;
+	&:hover, &:active
+	{
+		box-shadow: 0 0 11px rgba(33,33,33, .2); 
+	}
+}
+
+.team-person__image
+{
+	display: block;
+	width: 100%;
+}
+
+.team-person__desc
+{
+	padding: 25px;
+}
+
+.team-person__name a
+{
+	color: #000;
+	text-decoration: none;
+	font-size: 24px;
+	font-weight: bolder;
+	transition-duration: 400ms;
+	&:hover
+	{
+		color: #19D567;
+	}
+}
+
+.team-person__post
+{
+	font-size: 14px;
+	color: #19D567;
+	font-weight: bold;
+}
+
+.team-person__about
+{
+	margin-top: 20px;
+	font-size: 18px;
+	color: #77777777;
+}
+
+.energy-tips
+{
+	background-color: #fff;
+}
+
+.energy-tips__text
+{
+	width: 100%;
+	p
+	{
+		font-size: 18px;
+		color: #777777;
+	}
+}
+.energy-tips__info
+{
+	width: 100%;
+}
+
+
+.energy-tip__circle
+{
+	width: 96px;
+	height: 96px;
+	background-color: #19D567;
+	border-radius: 50%;
+	margin: 0 30px;
+}
+
+.energy-tip__text
+{
+	margin: auto 0;
+}
+
+.energy-tip__desc
+{
+	color: #88888888;
+	font-size: 18px;
+}
+
+.energy-tip__header
+{
+	font-size: 24px;
+	font-weight: bold;
+	color: #000;
+}
+
+.energy-tips__tip
+{
+	margin-bottom: 10px;
+}
+
+.energy-tips__info:last-child
+{
+	margin-bottom: 0;
+}
+
+.biofuel-energy
+{
+	background-color: #fff;
+}
+
+.biofuel-energy__header
+{
+	text-align: center;
+	font-size: 60px;
+}
+
+.biofuel-slider__wrapper
+{
+	text-align: center;
+}
+
+.biofuel-slider__slide img
+{
+	margin: 0 auto;
+}
+
+.slide-arrow
+{
+	background: none;
+	position: absolute;
+	top: 50%;
+	margin-top: -15px;
+}
+
+.prev-arrow
+{
+	left: -30px;
+	width: 0;
+	height: 0;
+	border-left: 0 solid transparent;
+	border-right: 15px solid #113463;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+}
+
+.next-arrow
+{
+	right: -30px;
+	width: 0;
+	height: 0;
+	border-right: 0 solid transparent;
+	border-left: 15px solid #113463;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+}
+
+.slick-dots
+{
+	display: flex;
+	justify-content: center;
+	margin: 0;
+	padding: 1rem 0;
+	list-style-type: none;
+	li
+	{
+		margin: 0 0.25rem;
+	}
+
+	button
+	{
+		display: block;
+		width: 1rem;
+		height: 1rem;
+		padding: 0;
+		border: none;
+		border-radius: 100%;
+		background-color: #19D567;
+		text-indent: -9999px;
+	}
+
+	li.slick-active button
+	{
+		background-color: orange;
+	}
+}
+
+.biofuel-info
+{
+	background-color: #fff;
+}
+
+.biofuel-info__short
+{
+	width: 30%;
+}
+
+.biofuel-short__text,
+.biofuel-long__text
+{
+	font-size: 18px;
+	color: #88888888;
+}
+
+.biofuel-short__text-item
+{
+	margin-bottom: 30px;
+}
+
+.biofuel-short__text-highlight,
+.biofuel-long__text-highlight
+{
+	font-size: 20px;
+	color: #000;
+	font-weight: bold;
+}
+
+.biofuel-info__long
+{
+	width: 70%;
+}
+
+.latest-news__title
+{
+	text-align: center;
+	font-weight: bold;
+}
+
+.latest-news__item
+{
+	margin-bottom: 50px;
+}
+
+.latest-news__item-img
+{
+	width: 100%;
+	height: 100%;
+}
+
+.latest-news__item-header
+{
+	margin-top: 20px;
+	font-size: 30px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.latest-news__item-date
+{
+	color: #19D567;
+	font-size: 22px;
+}
+
+.latest-news__item-anotation
+{
+	color: #88888888;
+}
+
+.latest-news__item-open
+{
 }

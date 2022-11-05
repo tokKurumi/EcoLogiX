@@ -55,4 +55,25 @@ $(document).ready(function()
 		cssEase: 'ease-out'
 	});
 
+	$('.nav-link').click(function () {
+		elementClick = $(this).attr('href');
+		destination = $(elementClick).offset().top;
+		$('body,html').animate({scrollTop: destination }, 1400);
+	});
+
+	$('.biofuel-slider').slick(
+	{
+		dots: true,
+		infinite: true,
+		autoplay: true,
+		accessibility: true,
+		autoplaySpeed: 7000,
+		speed: 1000,
+		arrows: true,
+		cssEase: 'ease-out',
+		prevArrow: '<button class="slide-arrow prev-arrow"></button>',
+    	nextArrow: '<button class="slide-arrow next-arrow"></button>'
+	}
+	);
+
 });
