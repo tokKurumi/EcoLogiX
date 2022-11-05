@@ -1,5 +1,7 @@
 $(document).ready(function()
 {
+	$(document.body).fadeIn(1200);
+
 	const parallax = $('.parallax');
 	if(parallax)
 	{

@@ -17,6 +17,7 @@ body
 {
 	width: 100vw;
 	overflow-x: hidden;
+	display: none; //need for fadeIn jQuery animation
 }
 
 .parallax
@@ -155,6 +156,7 @@ body
 
 .content
 {
+	overflow: hidden;
 	width: 100%;
 	background-color: #f5f5f5;
 	position: relative;
@@ -932,6 +934,13 @@ footer
 			@media (max-width: 991.98px)
 			{
 				color: #fff;
+			}
+		}
+		&.footer-heading-white
+		{
+			@media (max-width: 767px)
+			{
+				color: #000;
 			}
 		}
 	}
