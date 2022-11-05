@@ -100,4 +100,20 @@ $(document).ready(function()
 			$('body,html').animate({scrollTop: destination }, 1200);
 		}
 	});
+
+	window.addEventListener("keydown", function (event) {
+		if (event.key === "PageUp")
+		{
+			var y = $(window).scrollTop();
+			$('body,html').animate({scrollTop: y - 450 }, 500);
+		}
+	});
+
+	window.addEventListener("keydown", function (event) {
+		if (event.key === "PageDown")
+		{
+			var y = $(window).scrollTop();
+			$('body,html').animate({scrollTop: y + 450 }, 500);
+		}
+	});
 });
