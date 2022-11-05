@@ -1279,6 +1279,7 @@ footer
 	position: absolute;
 	top: 50%;
 	margin-top: -15px;
+	outline: none !important;
 }
 
 .prev-arrow
@@ -1402,8 +1403,4 @@ footer
 .latest-news__item-anotation
 {
 	color: #88888888;
-}
-
-.latest-news__item-open
-{
 }
