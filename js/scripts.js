@@ -80,4 +80,22 @@ $(document).ready(function()
 		destination = $(elementClick).offset().top;
 		$('body,html').animate({scrollTop: destination }, 1400);
 	});
+
+	AOS.init();
+
+	window.addEventListener("keydown", function (event) {
+		if (event.key === "End")
+		{
+			destination = $('#contact').offset().top;
+			$('body,html').animate({scrollTop: destination }, 1200);
+		}
+	});
+
+	window.addEventListener("keydown", function (event) {
+		if (event.key === "Home")
+		{
+			destination = $('#navbarSupportedContent').offset().top;
+			$('body,html').animate({scrollTop: destination }, 1200);
+		}
+	});
 });
