@@ -72,8 +72,12 @@ $(document).ready(function()
 		arrows: true,
 		cssEase: 'ease-out',
 		prevArrow: '<button class="slide-arrow prev-arrow"></button>',
-    	nextArrow: '<button class="slide-arrow next-arrow"></button>'
-	}
-	);
+		nextArrow: '<button class="slide-arrow next-arrow"></button>'
+	});
 
+	$('.list-unstyled li a').click(function () {
+		elementClick = $(this).attr('href');
+		destination = $(elementClick).offset().top;
+		$('body,html').animate({scrollTop: destination }, 1400);
+	});
 });
