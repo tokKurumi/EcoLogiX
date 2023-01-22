@@ -128,20 +128,20 @@ body
 
 .images-parallax__clouds
 {
-	background: url(/resources/img/clouds.jpg) top / cover no-repeat;
+	background: url(../resources/img/clouds.jpg) top / cover no-repeat;
 	top: 0;
 }
 
 .images-parallax__mountains
 {
-	background: url(/resources/img/mountains.png) top / cover no-repeat;
+	background: url(../resources/img/mountains.png) top / cover no-repeat;
 	top: 15%;
 	z-index: 2;
 }
 
 .images-parallax__human
 {
-	background: url(/resources/img/human.png) top / cover no-repeat;
+	background: url(../resources/img/human.png) top / cover no-repeat;
 	top: 45%;
 	z-index: 3;
 }
@@ -1034,12 +1034,12 @@ footer
 
 .about
 {
-	background: url(../../resources/img/projects-bg.jpg) center no-repeat;
+	background: url(../resources/img/projects-bg.jpg) center no-repeat;
 }
 
 .other-energy-sources
 {
-	background: url(../../resources/img/Depositphotos_91194800_original-1-1920x685-1.jpg) center no-repeat;
+	background: url(../resources/img/Depositphotos_91194800_original-1-1920x685-1.jpg) center no-repeat;
 }
 
 .about__wrap,
